@@ -1,10 +1,10 @@
+"use client";
+
 export default function ContactPage() {
   return (
-    <main>
+   <main className="min-vh-100 bg-success bg-opacity-10 py-5">
 
-      {/* ================= PAGE TITLE ================= 
-          Clean and centered header to set a welcoming tone.
-      */}
+      {/* ================= PAGE TITLE ================= */}
       <section className="text-center mb-5">
         <h1 className="fw-bold">Contact Me</h1>
         <p className="text-muted">
@@ -12,29 +12,31 @@ export default function ContactPage() {
         </p>
       </section>
 
-      {/* ================= CONTACT FORM SECTION ================= 
-          Using 'bg-white' and 'shadow-sm' for a clean, professional card layout.
-      */}
-      <section className="bg-white p-4 rounded shadow-sm">
+      {/* ================= CONTACT FORM ================= */}
+      <section
+        className="bg-white p-4 rounded shadow-sm mx-auto"
+        style={{ maxWidth: "600px" }}
+      >
 
-        {/* FORM (UI only)
-            Note: For a production-ready 'Security-First' app, we would 
-            eventually add CSRF protection and input sanitization here.
-        */}
-        <form>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault(); // now allowed because this is a Client Component
+            alert("Message sent!"); // optional feedback
+          }}
+        >
 
-          {/* Name input - Standard text field */}
+          {/* NAME */}
           <div className="mb-3">
             <label className="form-label">Name</label>
             <input
               type="text"
               className="form-control"
               placeholder="Enter your name"
-              required // Added 'required' attribute for basic client-side validation
+              required
             />
           </div>
 
-          {/* Email input - Validates email format automatically */}
+          {/* EMAIL */}
           <div className="mb-3">
             <label className="form-label">Email</label>
             <input
@@ -45,43 +47,32 @@ export default function ContactPage() {
             />
           </div>
 
-          {/* Message input - Multi-line text area */}
+          {/* MESSAGE */}
           <div className="mb-3">
             <label className="form-label">Message</label>
             <textarea
               className="form-control"
-              rows={4}
+              rows={5}
               placeholder="Write your message here..."
               required
-            ></textarea>
+            />
           </div>
 
-          {/* Submit button 
-              'type="button"' is used here to prevent page refresh since 
-              there is no backend handling this specific assignment form yet.
-          */}
-          <button type="button" className="btn btn-primary">
+          {/* SUBMIT */}
+          <button type="submit" className="btn btn-primary w-100">
             Send Message
           </button>
 
         </form>
-
       </section>
 
-      {/* ================= CONTACT LINKS ================= 
-          Direct links to professional social platforms. 
-          The 'flex-wrap' class ensures buttons stack nicely on mobile.
-      */}
+      {/* ================= LINKS ================= */}
       <section className="text-center mt-5">
 
         <h5>Connect with me</h5>
 
         <div className="d-flex justify-content-center gap-3 flex-wrap mt-3">
 
-          {/* LinkedIn Link:
-              'rel="noopener noreferrer"' is a security best practice 
-              to prevent tab-napping attacks when opening external links.
-          */}
           <a
             href="https://www.linkedin.com/in/wubit"
             target="_blank"
@@ -91,7 +82,6 @@ export default function ContactPage() {
             LinkedIn
           </a>
 
-          {/* GitHub Link */}
           <a
             href="https://github.com/Wubitcode"
             target="_blank"
@@ -101,9 +91,6 @@ export default function ContactPage() {
             GitHub
           </a>
 
-          {/* Email Direct Link:
-              Opens the user's default email client pre-addressed to you.
-          */}
           <a
             href="mailto:your.wubitg@gmail.com"
             className="btn btn-outline-success"

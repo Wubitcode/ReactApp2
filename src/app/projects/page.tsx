@@ -14,6 +14,7 @@ const projects = [
     description: "Secure e-commerce platform featuring Role-Based Access Control (RBAC), PHP backend, and Angular frontend.",
     image: "/images/project1.png",
     github: "https://github.com/Wubitcode/cybershop",
+    video: "/videos/project1.mp4"
   },
   {
     id: "2",
@@ -54,14 +55,14 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <main className="container py-5">
+   <main className="min-vh-100 bg-dark text-light py-5">
 
       {/* ================= PAGE HEADER ================= */}
       <section className="text-center mb-5">
         <h1 className="fw-bold">My Projects</h1>
-        <p className="text-muted">
-          A showcase of my work in Full-Stack development, 
-          focusing on secure architecture and responsive user interfaces.
+        <p className="text-light mt-3">
+          Showcasing my work in React, Angular, and PHP. My projects highlight my transition 
+          from classic web architecture to secure,modern full-stack development.
         </p>
       </section>
 
@@ -109,12 +110,12 @@ export default function ProjectsPage() {
                 {/* ACTION BUTTONS */}
                 <div className="mt-auto d-flex gap-2">
 
-                  {/* VIEW DETAILS: Links to the individual Case Study page */}
+                  {/* VIEW DETAILS: Links to the individual page */}
                   <Link
                     href={`/projects/${project.id}`}
                     className="btn btn-outline-primary btn-sm"
                   >
-                    View Case Study
+                    View 
                   </Link>
 
                   {/* GITHUB: Direct access to the source code for technical review */}

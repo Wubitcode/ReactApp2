@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <main className="container py-5">
+    <main className="min-vh-100 py-5" style={{ backgroundColor: "#eaf7ea" }}>
 
       {/* ================= HERO / HEADER ================= 
           Positions you immediately as a specialized developer. 

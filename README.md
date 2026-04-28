@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+├🌐 Personal Portfolio Website
+This is a modern, multi-page developer portfolio built to showcase my expertise in Full-Stack development, Mobile Web architecture, and Cybersecurity Engineering.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The application features a "security-first" design philosophy, reflecting my background in protecting digital assets while building high-performance user interfaces.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🚀 Overview
+This portfolio is a multi-page web application designed to present my work in a clean, modern, and responsive way. It serves as a central hub for my technical projects, professional journey.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Goal: To demonstrate the ability to build scalable, structured, and secure web applications using modern frameworks and AI-assisted development workflows.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📄 Pages Included
+Home Page – Professional introduction, core skills, and a "Secure Access" resume protocol.
 
-## Learn More
+Projects Page – A curated gallery of React, Angular, and PHP applications.
 
-To learn more about Next.js, take a look at the following resources:
+Project Details Page – Dynamic routing featuring technical case studies and video walkthroughs.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contact Page – Secure communication channel for collaborations and inquiries.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🛠️ Tech Stack
+Framework: Next.js (React)
 
-## Deploy on Vercel
+Language: TypeScript & JavaScript (ES6+)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Styling: CSS3 (Custom Glassmorphism, Tailwind CSS, Responsive Design)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Media: Next.js Image Optimization & HTML5 Video Demo integration
+
+Security: Logic-based Access Control simulation & Data Sanitization
+
+🎯 Key Features
+Secure Resume Protocol – An interactive simulation of a secure credential check for downloading professional documents.
+
+Dynamic Project Routing – Individual case-study pages generated dynamically via Next.js App Router.
+
+Video Walkthroughs – Integrated MP4 demos to showcase live functionality and UI/UX flow.
+
+Responsive Architecture – Optimized for seamless viewing across mobile, tablet, and desktop devices.
+
+AI-Assisted Workflows – Code optimized using AI-driven development for efficiency and modern best practices.
+
+📁 Project Structure
+Plaintext
+├── public/              # Static assets (images, videos, and resume.pdf)
+│   ├── videos/          # Project demo MP4 files
+│   └── images/          # Project screenshots and profile icons
+├── src/
+│   ├── app/             # Next.js App Router
+│   │   ├── data/        # Centralized project database (projects.ts)
+│   │   ├── projects/    # Project gallery and dynamic [id] routes
+│   │   └── page.tsx     # Hero section with Secure Access Protocol
+│   └── components/      # Global UI components (Navbar, Footer, etc.)
+└── next.config.mjs      # Framework configuration

@@ -14,6 +14,7 @@ export type Project = {
   tech: string[];      // An array of technologies used (for the tech stack list)
   github: string;      // Link to the source code
   demo: string;        // Link to the live demo or video walkthrough
+  video?: string;
 };
 
 /**
@@ -24,7 +25,7 @@ export type Project = {
  */
 export const projects: Project[] = [
   {
-    id: "cybershop",
+    id: "cybershop", // Matches /projects/cybershop
     title: "Cybershop",
     description:
       "A high-security e-commerce platform featuring Role-Based Access Control (RBAC) and secure authentication.",
@@ -33,7 +34,8 @@ export const projects: Project[] = [
       "A full-stack secure commerce solution focusing on identity and access management. Implemented RBAC to differentiate between admin and customer permissions, alongside encrypted session management to mitigate common web vulnerabilities.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "JWT Auth", "Security Engineering"],
     github: "https://github.com/Wubitcode/cybershop",
-    demo: "#", // Add my video walkthrough link here
+    demo: "#",
+    video: "/vidieo/project1.mp4", // This links to actual file
   },
   {
     id: "book-browser",
@@ -46,5 +48,6 @@ export const projects: Project[] = [
     tech: ["Angular", "PHP", "MySQL", "REST API", "Data Sanitization"],
     github: "https://github.com/Wubitcode/AngularApp5",
     demo: "#",
+    // video: "/vidieo/project2.mp4", // Optional: Add when i have a second video
   },
 ];
